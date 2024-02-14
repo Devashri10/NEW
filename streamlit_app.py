@@ -44,7 +44,7 @@ st.header(f"Happy Valentine's Day, {PERSON_NAME}! ❤️️🎄", anchor=False)
 
 # Display the Lottie animation
 lottie_animation = load_lottie_animation(LOTTIE_ANIMATION)
-st_lottie(lottie_animation, key="lottie-valentine", height=300)
+st_lottie(lottie_animation, key="lottie-holiday", height=300)
 
 # Personalized holiday message
 st.markdown(
