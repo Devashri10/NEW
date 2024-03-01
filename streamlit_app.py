@@ -8,7 +8,7 @@ from streamlit_extras.let_it_rain import rain
 THIS_DIR = Path(__file__).parent
 CSS_FILE = THIS_DIR / "style" / "style.css"
 ASSETS = THIS_DIR / "assets"
-LOTTIE_ANIMATION = ASSETS / "animation_valentine.json"
+LOTTIE_ANIMATION = ASSETS / "animation_Holiday.json"
 
 
 # Function to load and display the Lottie animation
@@ -29,7 +29,7 @@ def get_person_name():
 
 
 # Page configuration
-st.set_page_config(page_title="Happy Valentine's Day❤️️", page_icon="🎄")
+st.set_page_config(page_title="Happy Holiday", page_icon="🎄")
 
 # Run snowfall animation
 run_snow_animation()
@@ -40,15 +40,15 @@ with open(CSS_FILE) as f:
 
 # Display header with personalized name
 PERSON_NAME = get_person_name()
-st.header(f"Happy Valentine's Day, {PERSON_NAME}! ❤️️🎄", anchor=False)
+st.header(f"Happy Holiday, {PERSON_NAME}! ❤️🎄", anchor=False)
 
 # Display the Lottie animation
 #lottie_animation = load_lottie_animation(LOTTIE_ANIMATION)
-#st_lottie(lottie_animation, key="lottie-valentine", height=300)
+#st_lottie(lottie_animation, key="lottie-Holiday", height=300)
 
 # Personalized holiday message
 st.markdown(
-    f"Dear {PERSON_NAME}, I Love you So much! Can't Imagine life without you my khadus.❤️️🌟"
+    f"Dear {PERSON_NAME},️🌟"
 )
 
 
